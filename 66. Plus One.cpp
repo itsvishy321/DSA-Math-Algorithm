@@ -35,8 +35,8 @@ public:
 //         9 then array will become with all the elements having value
         // 0. Then we have to add one more element at last with value 0
 //         and make first element 1.
-        digits.push_back(0);
-        digits[0] = 1;
+        digits.push_back(1);
+        reverse(digits.begin(),digits.end());
         return digits;
     }
 };
